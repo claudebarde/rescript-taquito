@@ -1,0 +1,26 @@
+{
+  "name": "rescript-taquito",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "rescript",
+    "clean": "rescript clean -with-deps",
+    "start": "rescript build -w",
+    "watch": "nodemon --watch src --ext res --exec npm run test",
+    "test": "rescript && retest lib/es6/tests/*.mjs",
+    "test:watch": "nodemon --watch tests --ext res --exec npm run test"
+  },
+  "keywords": [
+    "rescript"
+  ],
+  "author": "Claude Barde <cldbrd84@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@ryyppy/rescript-promise": "^2.1.0",
+    "@taquito/taquito": "^11.2.0",
+    "rescript": "*"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "rescript-test": "^3.2.0"
+  }
+}
